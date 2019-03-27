@@ -1,7 +1,8 @@
-FROM ruby:2.3.3
+#FROM ruby:2.3.3
+FROM ruby:2.6.2
 
 # RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
-RUN apt-get update -qq
+RUN apt-get update
 RUN apt-get install -y build-essential 
 RUN apt-get install -y libpq-dev
 RUN apt-get install -y nodejs
